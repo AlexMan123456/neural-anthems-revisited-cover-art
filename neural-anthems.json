@@ -1,0 +1,61 @@
+{
+    "title": "Neural Anthems++",
+    "artist": "AlexGB231",
+    "cover": "https://drive.google.com/file/d/1JunJi_EN4cbosLPxlKBBGL_sBP4OEk3q/view?usp=sharing",
+    "songs": [
+        {
+            "title": "A New Era",
+            "artist": "AlexGB231",
+            "featuringArtists": ["SOLARIA"],
+            "duration": "3:49"
+        },
+        {
+            "title": "Rap Battle",
+            "artist": "AlexGB231",
+            "featuringArtists": ["Kevin", "JUN", "ASTERIAN", "Ninezero", "Ritchy"],
+            "duration": "3:23"
+        },
+        {
+            "title": "Mechanical Constructions",
+            "artist": "AlexGB231",
+            "featuringArtists": ["Mai", "SOLARIA"],
+            "duration": "4:28"
+        },
+        {
+            "title": "The Pirate Who Wanted Treasure",
+            "artist": "AlexGB231",
+            "featuringArtists": ["Kevin"],
+            "duration": "4:10"
+        },
+        {
+            "title": "Highest Power",
+            "artist": "AlexGB231",
+            "featuringArtists": ["Ninezero", "JUN"],
+            "duration": "4:46"
+        },
+        {
+            "title": "Dreams",
+            "artist": "AlexGB231",
+            "featuringArtists": ["ASTERIAN"],
+            "duration": "4:35"
+        },
+        {
+            "title": "Aquatic Cavern",
+            "artist": "AlexGB231",
+            "featuringArtists": ["JUN"],
+            "duration": "5:15"
+        },
+        {
+            "title": "This Big World",
+            "artist": "AlexGB231",
+            "featuringArtists": ["SOLARIA"],
+            "duration": "6:35"
+        },
+        {
+            "title": "The End Of the Album Blues",
+            "artist": "AlexGB231",
+            "featuringArtists": ["SOLARIA", "Kevin", "Mai"],
+            "duration": "3:57"
+        }
+    ]
+}
