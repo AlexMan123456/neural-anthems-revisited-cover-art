@@ -16,7 +16,10 @@ class DisplayAlbumPlayer(Scene):
 
         terminal.shift(0.3*RIGHT+UP)
 
-        self.add(code_window, terminal)
+        window_buttons_colours = ["#FF605C", "#FFBD44", "#00CA4E"]
+        window_buttons = VGroup(*[Dot(color=window_buttons_colours[i]) for i in range(len(window_buttons_colours))]).arrange(RIGHT, buff=0.1).shift(5.2*LEFT)
+
+        self.add(code_window, terminal, window_buttons)
 
     def set_terminal_text(self):
         font="Monospace"
