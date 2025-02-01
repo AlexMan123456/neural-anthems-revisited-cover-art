@@ -4,12 +4,17 @@ from manim import *
 class DisplayAlbumPlayer(Scene):
     def construct(self):
         filename = "play-album.js"
-        code_window = Code(code_file=filename, language="Javascript", background="window").scale(0.75).shift(2*UP)
-        terminal_text = self.set_terminal_text()
-        terminal = VGroup(RoundedRectangle(0.2, color=WHITE).move_to(terminal_text).scale(2.9).shift(0.05*LEFT), terminal_text)
-        terminal.add(Text("Terminal", font_size=20, font="Arial").next_to(terminal, UP, buff=-2.05))
+        code_window = VGroup(Code(code_file=filename, language="Javascript", background="window").scale(0.75).shift(2*UP))
+        code_window.add(Text(filename, font_size=15, font="Arial").next_to(code_window, UP, buff=-0.25))
 
-        terminal_text.scale(0.5)
+        code_window.shift(0.4*RIGHT+1.3*UP)
+
+        
+        terminal_text = self.set_terminal_text()
+        terminal = VGroup(RoundedRectangle(0.1, color=WHITE).move_to(terminal_text).scale(2.9).shift(0.05*LEFT), terminal_text)
+        terminal.add(Text("Terminal", font_size=20, font="Arial").next_to(terminal, UP, buff=-0.35))
+
+        terminal.shift(0.3*RIGHT+UP)
 
         self.add(code_window, terminal)
 
@@ -28,7 +33,7 @@ class DisplayAlbumPlayer(Scene):
             text_index=i+7
             terminal_text.add(Text(songs[i], font=font).next_to(terminal_text[text_index], DOWN, aligned_edge=LEFT).shift(RIGHT if i == 0 else 0))
             
-        terminal_text.shift(7.1*LEFT+1.8*UP).scale(0.8)
+        terminal_text.shift(7.1*LEFT+1.8*UP).scale(0.4)
 
         return terminal_text
 
