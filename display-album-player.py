@@ -4,7 +4,7 @@ from manim import *
 class DisplayAlbumPlayer(Scene):
     def construct(self):
         filename = "play-album.js"
-        code_window = VGroup(Code(code_file=filename, language="Javascript", background="window").scale(0.75).shift(2*UP))
+        code_window = VGroup(Code(code_file=filename, language="Javascript", background="window", formatter_style="native").scale(0.75).shift(2*UP))
         code_window.add(Text(filename, font_size=15, font="Arial").next_to(code_window, UP, buff=-0.25))
 
         code_window.shift(0.4*RIGHT+1.3*UP)
